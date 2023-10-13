@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World
+title: Migrating Existing Mobile App
 ---
 
 Codebase Switch: A Step-by-Step Guide to Migrating an Android App that Uses React Native
