@@ -19,9 +19,22 @@ layout: default
     {{ content }}
   </div>
 
+  <!-- AdSense Ad Unit -->
+  <div style="margin-top: 20px;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307789791467781"
+            crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4307789791467781"
+         data-ad-slot="1234567890"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307789791467781"
-     crossorigin="anonymous"></script>
 </article>
