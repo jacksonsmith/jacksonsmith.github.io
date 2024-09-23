@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-title: Jackson Smith
+title: Engineering Blog of Jackson Smith
 description: Hello! My name is Jackson Smith and I am a Software Engineer with more than 10 years of experience in the field. I have worked for companies such as CI&T, Thoughtworks, and currently, I am part of the team at Sanar.
 plugins:
   - jekyll-sitemap
