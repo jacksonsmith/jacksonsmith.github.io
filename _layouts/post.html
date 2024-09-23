@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
 
+<article itemscope itemtype="http://schema.org/BlogPosting">
   <!-- <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -15,26 +15,28 @@ layout: default
       {% endif %}</p>
   </header> -->
 
-  <div itemprop="articleBody">
-    {{ content }}
-  </div>
+  <div itemprop="articleBody">{{ content }}</div>
 
   <!-- AdSense Ad Unit -->
-  <div style="margin-top: 20px;">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307789791467781"
-            crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-layout="in-article"
-         data-ad-format="fluid"
-         data-ad-client="ca-pub-4307789791467781"
-         data-ad-slot="2436885328"></ins>
+  <div style="margin-top: 20px">
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307789791467781"
+      crossorigin="anonymous"
+    ></script>
+    <!-- regular -->
+    <ins
+      class="adsbygoogle"
+      style="display: block"
+      data-ad-client="ca-pub-4307789791467781"
+      data-ad-slot="2436885328"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
+  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
 </article>
